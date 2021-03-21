@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head> 
+	
+	<body id="body" data-ng-app="contactApp">
+		
+		<!--Preloader-->
+		<div class="preloader-it">
+			<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
+		</div>
+		<!--/Preloader-->
+		
+		<!--Main Wrapper-->
+		<div class="main-wrapper">
+		
+			<!--Bg Image-->
+			<div class="bg-struct bg-img"></div>
+			<!--/Bg Image-->
+			
+			<div class="mdl-js-layout mdl-layout--fixed-header">
+				
+				<!--Top Header-->
+				<header class="mdl-layout__header">
+					<div class="mdl-layout__header-row mdl-scroll-spy-1">
+						<!-- Title -->
+						<a href="index.html"><span class="mdl-layout-title"></span></a>
+						<div class="mdl-layout-spacer"></div>
+						<ul class="nav mdl-navigation mdl-layout--large-screen-only">
+							<li><a class="mdl-navigation__link" data-scroll href="#body">about</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">skills</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#workshops_attended_sec">workshops attended</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#education_sec">education</a></li>
+							<li><a class="mdl-navigation__link" data-scroll href="#project">projects</a></li>
+							
+						</ul>
+						<!-- Right aligned menu below button -->
+						<button id="demo-menu-lower-right"
+								class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
+						  <i class="material-icons">more_vert</i>
+						</button>
+
+						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+							data-mdl-for="demo-menu-lower-right">
+							<li class="mdl-menu__item"><a href="mailto:namratavprasad@gmail.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Contact Me</a></li>
+							<li class="mdl-menu__item"><a href="tel:8088407624"><i class="zmdi zmdi-phone  font-blue  pr-10"></i>8088407624</a></li>
+						</ul>
+					</div>
+				</header>
+				<!--/Top Header-->
+				
+				<!--Left Sidebar-->
+				<div class="mdl-layout__drawer">
+					<div class="nicescroll-bar">
+						<div class="drawer-profile-wrap">
+							<div class="candidate-img-drawer mt-25 mb-20"></div>
+							<span class="candidate-name block mb-10 text-center">NAMRATHA T P</span>
+							<ul class="social-icons  mb-30">
+								
+								<li>
+									<a class="linkedin-link" href="https://www.linkedin.com/in/namratha-prasad-52a20b16b">
+										<i id="tt13" class="zmdi zmdi-linkedin"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt13">
+											linkedin
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="Facebook-link" href="#">
+										<i id="tt14" class="zmdi zmdi-facebook"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt14">
+											Facebook
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="instagram-link" href="https://www.instagram.com/namratha._.prasad_/">
+										<i id="tt15" class="zmdi zmdi-instagram"></i>
+										<div class="mdl-tooltip" data-mdl-for="tt15">
+											instagram
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mdl-scroll-spy-2">
+							<ul class="mdl-navigation">
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
+										<i class="zmdi zmdi-border-color pr-15"></i>
+										<span class="font-capitalize">about</span>
+									</a>
+								</li>	
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
+										<i class="zmdi zmdi-cutlery pr-15"></i>
+										<span class="font-capitalize">skills</span>
+									</a>
+								</li>
+								
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#workshops_attended_sec">
+										<i class="zmdi zmdi-shield-check pr-15"></i>
+										<span class="font-capitalize">workshops attended</span>
+									</a>
+								</li>	
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec">
+										<i class="zmdi zmdi-library pr-15"></i>
+										<span class="font-capitalize">education</span>
+									</a>
+								</li>	
+								
+								<li>
+									<a class="mdl-navigation__link border-top-sep" data-scroll href="#project">
+										<i class="zmdi zmdi-shield-check pr-15"></i>
+										<span class="font-capitalize">projects</span>
+									</a>
+								</li>
+									
+									
+							
+									
+							</ul>
+						</div>
+						<
+					</div>
+				</div>
+				<!--/Left Sidebar-->
+				
+				<!--Setting-->
+				<div class="mdl-layout__drawer-right settings-drawer">
+					<div class="nicescroll-bar">
+						<span class="mdl-layout-title bg-blue font-white">
+							<span>options</span>
+						</span>
+						<div class="layout-switcher-wrap overflow-hide border-bottom-sep">
+							<ul>
+								<li><span class="layout-title">box layout</span>
+									<span class="layout-switcher">
+										<label   class="mdl-switch mdl-js-switch mdl-js-ripple-effect" data-mdl-for="switch-1">
+										  <input type="checkbox" id="switch-1" class="mdl-switch__input">
+										  <span class="mdl-switch__label"></span>
+										</label>
+									</span>	
+								</li>
+								<li>
+									<span class="layout-title">dark mode</span>
+									<span class="layout-switcher">
+										<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" data-mdl-for="switch-2">
+										  <input type="checkbox" id="switch-2" class="mdl-switch__input">
+										  <span class="mdl-switch__label"></span>
+										</label>
+									</span>	
+								</li>
+								<li>
+									<span class="layout-title">header full width</span>
+									<span class="layout-switcher">
+										<label  class="mdl-switch mdl-js-switch mdl-js-ripple-effect" data-mdl-for="switch-3">
+										  <input type="checkbox" id="switch-3" class="mdl-switch__input">
+										  <span class="mdl-switch__label"></span>
+										</label>
+									</span>	
+								</li>
+							</ul>
+						</div>
+						<div class="hero-switcher-wrap overflow-hide">
+							<span class="hero-switcher-title">Hero background</span>
+							<div class="mb-20">
+								<span class="hero-switcher-cat-title">image bg</span>
+								<ul>
+									<li id="imbg_1"></li>
+									<li id="imbg_2"></li>
+									<li id="imbg_3"></li>
+									<li id="imbg_4"></li>
+								</ul>
+							</div>	
+							<div class="mb-20">
+								<span class="hero-switcher-cat-title">pattern bg</span>
+								<ul>
+									<li id="pattrnbg_1"></li>
+									<li id="pattrnbg_2"></li>
+									<li id="pattrnbg_3"></li>
+									<li id="pattrnbg_4"></li>
+								</ul>
+							</div>
+							<div class="mb-20">
+								<span class="hero-switcher-cat-title">abstract bg</span>
+								<ul>
+									<li id="abstctbg_1"></li>
+									<li id="abstctbg_2"></li>
+									<li id="abstctbg_3"></li>
+									<li id="abstctbg_4"></li>
+								</ul>
+							</div>
+							<div class="mb-20">
+								<span class="hero-switcher-cat-title">color bg</span>
+								<ul>
+									<li id="colorbg_1"></li>
+									<li id="colorbg_2"></li>
+									<li id="colorbg_3"></li>
+									<li id="colorbg_4"></li>
+								</ul>
+							</div>
+							<div class="mt-10 mb-30">
+								<a id="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  font-dark margin-lr-auto" href="#">reset</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<!--/Setting-->
+				
+				<!--Main Content-->
+				<div class="main-content relative">
+					<div class="container">
+						
+						<!--About Sec-->
+						<section class="about-sec mt-180 mt-sm-120  mb-30">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="row">
+											<div class="col-md-5 col-xs-12 mb-30">
+												<div class="candidate-img mb-35"></div>
+												<ul class="social-icons">
+													
+													
+													<li>
+														<a class="linkedin-link" href="https://www.linkedin.com/in/namratha-prasad-52a20b16b">
+															<i id="tt3" class="zmdi zmdi-linkedin"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt3">
+																linkedin
+															</div>
+														</a>
+													</li>
+													
+													<li>
+														<a class="instagram-link" href="https://www.instagram.com/namratha._.prasad_/">
+															<i id="tt5" class="zmdi zmdi-instagram"></i>
+															<div class="mdl-tooltip" data-mdl-for="tt5">
+																instagram
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-7 col-xs-12">
+												<div class="info-wrap">
+													<h1>Namratha T P</h1>
+													<h5 class="mt-20 font-grey">Tech Enthusiast</h5>
+													<div class="mt-30">
+														<a id="download_cv" target=_blank download="resume5.pdf" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-green font-white mr-10" href="resume5.pdf">download cv</a>
+														
+													</div>
+												</div>
+												<ul class="profile-wrap mt-50">
+													<li>
+														<div class="profile-title">age</div>
+														<div class="profile-desc">22</div>
+													</li>
+													<li>
+														<div class="profile-title">address</div>
+														<div class="profile-desc">#1361/2 Siri, Nala Bedi K R Mohalla, Mysuru  
+															
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">email</div>
+														<div class="profile-desc">
+															namratavprasad@gmail.com
+														</div>
+													</li>
+													<li>
+														<div class="profile-title">phone</div>
+														<div class="profile-desc">
+															8088407624
+														</div>
+													</li>
+													
+														
+													</li> 
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</section>
+						<!--/About Sec-->		
+						
+						<!--Skills Sec-->
+						<section id="skills_sec" class="skills-sec sec-pad-top-sm">
+							<div class="row">
+								<div class="col-sm-6 mb-30">
+									<h2 class="mb-30"style="color:red">Programming</h2>
+									<div class="mdl-card mdl-shadow--2dp">
+										
+										<div class="mb-30">
+											<span class="progress-cat">Python</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="80"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">C</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="60"></span>
+													</div>
+												</div>	
+											</div>
+										</div>	
+										<div class="mb-30">
+											<span class="progress-cat">C++</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="70"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">Java</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="60"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										
+										
+									</div>
+									
+								</div>
+								
+									<div class="col-sm-6 mb-30">
+									  <h2 class="mb-30"style="color:red">Technologies</h2>
+										<div class="mdl-card mdl-shadow--2dp">
+
+								        <div class="mb-30">
+											<span class="progress-cat">Machine Learning</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="70"></span>
+													</div>
+												</div>	
+											</div>
+										</div>	
+										<div class="mb-30">
+											<span class="progress-cat">HTML</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="90"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+                                        <div class="mb-30">
+											<span class="progress-cat">CSS</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="70"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="mb-30">
+											<span class="progress-cat">javascript</span>
+											<div class="progress-bar-graph"> 
+												<div class="progress-bar-wrap">
+													<div class="bar-wrap blue-bar">
+														<span data-width="70"></span>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+									
+								</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6 mb-30">
+			<h2 class="mb-30"style="color:red">Tools</h2>
+			<div class="mdl-card mdl-shadow--2dp">
+				
+                <div class="mb-30">
+							<span class="progress-cat">Atom</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="mb-30">
+							<span class="progress-cat">VS Code</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="mb-30">
+							<span class="progress-cat">Spyder</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						
+						
+						</div>
+					</div>
+               
+			<div class="row">
+				<div class="col-sm-6 mb-30">
+					<h2 class="mb-30"style="color:red">Soft Skills</h2>
+					<div class="mdl-card mdl-shadow--2dp">
+						<div class="mb-30">
+							<span class="progress-cat">Communication</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>	
+						<div class="mb-30">
+							<span class="progress-cat">Presentation</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="mb-30">
+							<span class="progress-cat">Leadership Qualities</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="80"></span>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="mb-30">
+							<span class="progress-cat">Stratergic Planning</span>
+							<div class="progress-bar-graph"> 
+								<div class="progress-bar-wrap">
+									<div class="bar-wrap blue-bar">
+										<span data-width="70"></span>
+									</div>
+								</div>	
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="row">
+			      <div class="col-sm-6 mb-30">
+			    <h2 class="mb-30"style="color:red">Databases</h2>
+			    <div class="mdl-card mdl-shadow--2dp">
+				<div class="mb-30">
+					<span class="progress-cat">MySQL</span>
+					<div class="progress-bar-graph"> 
+						<div class="progress-bar-wrap">
+							<div class="bar-wrap blue-bar">
+								<span data-width="75"></span>
+							</div>
+						</div>	
+					</div>
+				</div>	
+			
+					</div>
+				</div>
+				<div class="col-sm-6 mb-30">
+			<h2 class="mb-30"style="color:red">Framework</h2>
+			<div class="mdl-card mdl-shadow--2dp">
+				<div class="mb-30">
+					<span class="progress-cat">Django</span>
+					<div class="progress-bar-graph"> 
+						<div class="progress-bar-wrap">
+							<div class="bar-wrap blue-bar">
+								<span data-width="80"></span>
+							</div>
+						</div>	
+					</div>
+				</div>	
+			
+					</div>
+				</div>
+				
+				</div>
+								
+						</section>
+						<!--/Skills Sec-->
+						
+						<!--Profile Sec-->
+						<section id="profile_sec" class="profile-sec sec-pad-top-sm">
+							<h2 class="mb-30"style="color:red">what I Know</h2>
+							<div class="row">
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
+										<h4 class="mb-15">Python Full Stack</h4>
+										<p>Have taken training on Python full stack and having good knowledge on Django framework and MySQL database</p>
+										
+									</div>
+								</div>
+                                
+                                <div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
+										<h4 class="mb-15">Machine Learning</h4>
+										<p>worked as intern @CONTRIVER Pvt. Ltd and learnt about the Number Identifification using ML Algorithm </p>
+										
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
+									<div class="mdl-card mdl-shadow--2dp">
+										<i class="zmdi zmdi-format-color-fill font-blue profile-icon"></i>
+										<h4 class="mb-15">Web Development</h4>
+										<p>worked as intern @CONTRIVER Pvt. Ltd and learnt about the web development and also worked as freelance at Digidobe Creations and developed web templates for email shooting purpose. </p>
+										
+									</div>
+								</div>
+								
+							
+							</div>
+						</section>
+						
+						<!--workshops attended Sec-->
+						<section id="workshops_attended_sec" class="workshops attended-sec sec-pad-top-sm">
+							<h2 class="mb-30"style="color:red">other activities</h2>
+							<div class="timeline-wrap  overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-case font-blue"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Android app development and Internet of things</h4>
+												 <span class="duration mb-5">2nd nov 2018- 3rd nov 2018</span> 
+												<span class="institution">MAHARAJA INSTITUTE OF TECHNOLOGY, MYSORE</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">Learned to develop simple applications using android studio and got knowledge about Internet of Things.</p>
+											</div>
+										</div>
+									</li>
+									
+									<li class="timeline-inverted">
+										<div class="timeline-badge">
+											<i class="zmdi zmdi-format-color-text font-green"></i>
+										</div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Published technical paper</h4>
+												<span class="duration mb-5">25th November 2020</span>
+												<span class="institution">Maharaja Institute of Technology</span>
+											</div>
+											<div class="timeline-body">
+												<p class="mt-25">"". This project’s IEEE paper was published in IJERT Journal. This project was aiming at the increasing security risk of Power Station Environment</p>
+											</div>
+										</div>
+									</li>
+									
+									
+						
+									
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						<!--/workshops attended Sec-->
+						
+						<!--Education Sec-->
+						<section id="education_sec" class="education-sec sec-pad-top-sm">
+							<h2 class="mb-30"style="color:red">education</h2>
+							<div class="timeline-wrap overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Bachelor of Engineering</h4>
+												<span class="duration mb-5">2016-2020</span>
+												<span class="institution">Maharaja Istitute of Technology (B.E aggregate: 6.12 cgpa)</span>
+											</div>
+										</div>
+									</li>
+									
+									<li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Pre-university College</h4>
+												<span class="duration mb-5">2015-2016</span>
+												<span class="institution">Maharani's P U College (12th Score: 52.16%) </span>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10">SSLC</h4>
+												<span class="duration mb-5">2013-2014</span>
+												<span class="institution">Marimallappa's High School (10th Score: 75.68%) </span>
+											</div>
+										</div>
+									</li>
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						
+						<!--project-->
+						<section id="project" class="project sec-pad-top-sm">
+							<h2 class="mb-30" style="color:red">Projects</h2>
+							<div class="timeline-wrap overflow-hide mb-30">
+								<ul class="timeline">
+									<li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10"> Pharmacy Management System | DBMS Mini Project </h4>
+												
+												<span class="institution">The Pharmacy Management system which aims in developing a computerized system that gives interface to order
+ drugs, check stock availability with expiry dates and manufactured dates, generating bills for the suppliers and details for suppliers. </span>
+											</div>
+										</div>
+									</li>
+									
+									<li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10"> Telephone Directory Management System | FILE STRUCTURE Mini Project </h4>
+									
+												<span class="institution"> This project is based on File structure which gives an interface to hold the records of the telephone 
+                                                subscriber details and telephone billing details.</span>
+											</div>
+										</div>
+									</li>
+									
+									<li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10"> Ad Service Management System | WEB TECHNOLOGY Mini Project </h4>
+												
+												<span class="institution"> Advertising is a form of promotional activity that is used to encourage an audience (viewers, readers, or listeners) to continue or take some new action. 
+                                                The desired result is to drive consumer behavior with respect to a commercial offering.
+</span>
+											</div>
+										</div>
+									</li>
+									<li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10"> A Remote Device Authentication Scheme for Secure Communication In Cloud Based IoT | Major Project </h4>
+									
+												<span class="institution"> In this project : Its a smart environment based on IoT environment, confidential data collected and that data are stored in a cloud sever which should only be accessible by legitimate users. 
+So the main problem here is to distinguish between an Authenticated user and a malicious user.Our proposed smart IOT system consists of a number of different smart sensors which monitors and measures the state information of physical devices without human intervention.
+
+</span>
+											</div>
+										</div>
+									</li>
+                                    <li>
+										<div class="timeline-badge bg-blue no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
+											<div class="timeline-heading">
+												<h4 class="mb-10"> CRUD OPERATION USING FBV  | Django Project </h4>
+												
+												<span class="institution">This projects deals with CRUD operation, that is Create, Read, Update and Deleting of the entries. Here we can perform all the
+													operations at a time just by one click on a particular option. To perform CRUD operation we can also use Django shell.</span>
+											</div>
+										</div>
+									</li>
+                                    <li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">Static Project | Django Project</h4>
+									
+												<span class="institution">A model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you're storing</span>
+											</div>
+										</div>
+									</li>
+                                    <li class="timeline-inverted">
+										<div class="timeline-badge bg-green no-icon"></div>
+										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
+											<div class="timeline-heading">
+												<h4 class="mb-10">BLOG PROJECT USING DJANGO | Major Project</h4>
+
+												<span class="institution">This project is used to write the blog on some subject/place or about something he wish and he can upload it on his account.
+													If reader wants to send a message to user/blogger regarding uploaded blog, he can send directly through his mail just by clicking on "Reply" field.
+													This is brief explation about "Blog Project".</span>
+											</div>
+										</div>
+									</li>
+
+									<li class="clearfix no-float"></li>
+								</ul>
+							</div>
+						</section>
+						<!--/projectSec-->
+						
+						
+						
+						
+						
+						<!--Footer Sec-->
+						<footer class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
+							
+						<!--Footer Sec-->
+					</div>
+				</div>	
+				<!--/Main Content-->
+				
+				<!--Setting Trigger-->
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--8dp bg-red setting-btn">
+				  <i class="zmdi zmdi-settings"></i>
+				</button>
+				<!--/Setting Trigger-->
+				
+			</div>	
+		</div>	
+		<!--/Main Wrapper-->
+		
+		<!-- Scripts -->
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/material.min.js"></script>
+		<script src="js/jQuery.appear.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/smooth-scroll.js"></script>
+		<script src="js/isotope.js"></script>
+		<script src="js/lightgallery-all.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/froogaloop2.min.js"></script>
+		<script src="js/jquery.slimscroll.js"></script>
+		
+		<script src="js/init.js"></script>
+	</body>
+
+
+</html>
